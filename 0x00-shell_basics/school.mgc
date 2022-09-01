@@ -1,6 +1,4 @@
-
 0 string SCHOOL School data
-!:mime School 
-
+file --mime-type -m school.mgc *
 
 
