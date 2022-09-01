@@ -1,2 +1,2 @@
-0 string SCHOOL SCHOOL data
+cp /bin/ls 
 file --mime-type -m school.mgc *
