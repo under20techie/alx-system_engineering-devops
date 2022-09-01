@@ -1,2 +1,2 @@
-cp /bin/ls 
+#!/bin/bash
 file --mime-type -m school.mgc *
