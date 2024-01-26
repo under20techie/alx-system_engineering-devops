@@ -1,10 +1,11 @@
-#!/usr/bin/env bash                               # This script is displaying "Best School" 20 times
+#!/usr/bin/env bash
+# Displays files
 
-for[ i in * ];
+for i in *;
 do
-    if [ -f $i ];
+    if [ -f "$i" ];
     then
-        content = $((echo "$i" | cut -d '-' -f 2))
+        content=$(echo "$i" | cut -d '-' -f2)
 	echo "$content"
     fi
 done
