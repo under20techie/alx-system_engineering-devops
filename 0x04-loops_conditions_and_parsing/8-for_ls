@@ -1,0 +1,10 @@
+#!/usr/bin/env bash                               # This script is displaying "Best School" 20 times
+
+for[ i in * ];
+do
+    if [ -f $i ];
+    then
+        content = $((echo "$i" | cut -d '-' -f 2))
+	echo "$content"
+    fi
+done
