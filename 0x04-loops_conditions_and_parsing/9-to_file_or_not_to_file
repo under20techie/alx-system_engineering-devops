@@ -2,7 +2,6 @@
 # Checks a file
 
 i=school
-
 if [ -e "$i" ];
 then
     echo "school file exists"
@@ -16,7 +15,7 @@ then
 
     if [ -f "$i" ];
     then
-	"school is a regular file"
+	echo $"school is a regular file"
     fi
 
 else
