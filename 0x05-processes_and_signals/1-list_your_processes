@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # list processes in user defined format 
-ps -arxuf
+
+ps -axuf
