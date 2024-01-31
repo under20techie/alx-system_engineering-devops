@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 # Kills process
 
-i=$(pidof -s "bash 4-to_infinity_and_beyond")
+i=$(pidof -s "bash ./4-to_infinity_and_beyond")
 if [ -n "$i" ];
 then
     pkill -15 "$i"
+
 fi
