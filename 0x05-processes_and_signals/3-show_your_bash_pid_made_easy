@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Display lines containing bash and their pid's
+pgrep -l bash
