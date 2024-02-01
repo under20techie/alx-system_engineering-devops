@@ -5,7 +5,7 @@ clean_up () {
     rm  /var/run/myscript.pid
     pkill -f -15 "100-process_and_pid_file"
 }
-touch /var/run/myscript.pid; echo '`pgrep -f "bash /var/run/myscript.pid"`' > /var/run/myscript.pid
+touch /var/run/myscript.pid; echo '$(pgrep -f "bash /var/run/myscript.pid")' > /var/run/myscript.pid
 trap clean_up 'echo "I hate the kill command"' SIGTERM
 trap clean_up 'echo "Y U no love me?!"' SIGINT
 
