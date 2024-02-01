@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Kills process
+clean_up () {
+    rm /var/run/myscript.pid
+    exit
+}
+
+trap clean_up 'echo "I hate the kill command"' SIGTERM
+trap clean_up 'echo "Y U no love me?!"' SIGINT
+
+while [ 1 ];
+do
+    echo "To infinity and beyond"
+done
