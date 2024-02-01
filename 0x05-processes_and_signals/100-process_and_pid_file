@@ -6,8 +6,8 @@ clean_up () {
     exit
 }
 
-trap clean_up 'echo "I hate the kill command"; clean_up' SIGTERM
-trap clean_up 'echo "Y U no love me?!"; clean_up' SIGINT
+trap clean_up  'echo "I hate the kill command"' SIGTERM
+trap clean_up 'echo "Y U no love me?!"' SIGINT
 
 echo $$ >> /var/run/myscript.pid
 while true;
