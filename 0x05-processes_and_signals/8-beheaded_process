@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Kills process
-i=$(pgrep -f "bash ./4-to_infinity_and_beyond")
+i=$(pgrep -f "bash ./7-highlander")
 
 if [ -n "$i" ];
 then
-    pkill -9 -f "bash ./4-to_infinity_and_beyond"
+    pkill -9 -f "bash ./7-highlander"
 fi
