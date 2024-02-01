@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Displays a message indefinitely
 
-trap "I am invincible!!!" SIGTERM
+trap 'I am invincible!!!' SIGTERM
 
 while ((1));
 do
