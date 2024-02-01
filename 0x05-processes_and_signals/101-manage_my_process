@@ -3,21 +3,21 @@
 
 if [ "$#" -eq 2 ]
 then
-    if [ "$1" -eq "start" ];
+    if [ "$1" = "start" ];
     then
         ./manage_my_process&
 	echo $$ > /var/run/my_process.pid
 	echo "manage_my_process started"
     fi
 
-    if [  "$1" -eq "stop" ];
+    if [  "$1" = "stop" ];
     then
         pkill -15 -f "bash ./manage_my_process started"
 	rm /var/run/my_process.pid
 	echo "manage_my_process stopped"
     fi
 
-    if [ "$1" -eq "restart" ];
+    if [ "$1" = "restart" ];
     then
         pkill -15 -f "bash ./manage_my_process started"
 	rm /var/run/my_process.pid
