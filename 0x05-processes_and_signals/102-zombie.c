@@ -19,7 +19,6 @@ int main(void)
 		else
 		{
 			i++;
-			sleep(2);
 		}
 	}
 	infinite_while();
