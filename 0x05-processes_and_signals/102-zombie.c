@@ -14,7 +14,11 @@ int main(void)
 		if (child == 0)
 		{
 			printf("Zombie process created, PID: %d\n", getpid());
-			i++;
+			exit(0);
+		}
+		else
+		{
+			sleep(2);
 		}
 	}
 	infinite_while();
