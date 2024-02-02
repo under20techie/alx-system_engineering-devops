@@ -8,7 +8,7 @@ int main(void)
 {
 	int i = 0;
 
-	while (i < 5 && fork() > 0)
+	while (i < 5 && fork() != 0)
 	{
 		printf("Zombie process created, PID: %d\n", getpid());
 		i++;
