@@ -18,6 +18,7 @@ int main(void)
 		}
 		else
 		{
+			sleep(2);
 			i++;
 		}
 	}
