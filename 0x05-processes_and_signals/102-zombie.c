@@ -10,7 +10,7 @@ int main(void)
 
 	while (i < 5 && fork() > 0)
 	{
-		printf("Zombie process created, %d: %d", getppid(), getpid());
+		printf("Zombie process created, PID: %d", getpid());
 		i++;
 	}
 	infinite_while();
