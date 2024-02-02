@@ -14,7 +14,14 @@ int main(void)
 		i++;
 	}
 	infinite_while();
+	return (0);
 }
+
+/**
+ * infinite_while - sleeps indefinitely
+ *
+ * Return: Zero
+ */
 int infinite_while(void)
 {
 	    while (1)
