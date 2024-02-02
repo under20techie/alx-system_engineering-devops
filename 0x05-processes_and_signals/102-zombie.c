@@ -7,11 +7,15 @@
 int main(void)
 {
 	int i = 0;
+	pid_t child;
 
-	while (i < 5 && fork() == 0)
+	while (i < 5 && (child = fork()) >= 0)
 	{
-		printf("Zombie process created, PID: %d\n", getpid());
-		i++;
+		if (child == 0)
+		{
+			printf("Zombie process created, PID: %d\n", getpid());
+			i++;
+		}
 	}
 	infinite_while();
 	return (0);
