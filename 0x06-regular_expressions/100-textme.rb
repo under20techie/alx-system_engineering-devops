@@ -3,4 +3,4 @@ from = ARGV[0].scan(/from:(.*?)\]/)
 to = ARGV[0].scan(/to:(.*?)\]/)
 flag = ARGV[0].scan(/flags:(.*?)\]/)
 
-puts [from, to, flag].join(,)
+puts [from, to, flag].join(',')
