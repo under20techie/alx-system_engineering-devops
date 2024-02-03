@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#shows listening sockets and their program name and pid
+nestat -lp
