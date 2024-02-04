@@ -2,5 +2,5 @@
 # Edits the ip adresses of localhost and facebook.com in /etc/hosts
 cp /etc/hosts ~/hosts.new
 sed -i 's/127.0.0.1\tlocalhost/127.0.0.2\tlocalhost/' ~/hosts.new
-sed -i 's/157.240.11.35\tfacebook.com/8.8.8.8\tfacebook.com/' ~/hosts.new
+sed -i 's/157.240.229.35\tfacebook.com/8.8.8.8\tfacebook.com/' ~/hosts.new
 cp -f ~/hosts.new /etc/hosts
