@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 # displays all active IPv4 IPs on the machine it’s executed on
-ifconfig | grep 'inet' | awk '{print $2}'
+ifconfig | grep 'inet' > ip_t.txt
+cat ip_t.txt | awk '{print $2}'
+rm ip_t.txt
