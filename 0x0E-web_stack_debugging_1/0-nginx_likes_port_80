@@ -1,5 +1,3 @@
 #!/usr/bin/env bash
-# find out whats keeping your Ubuntu container’s Nginx installation from listening on port80
-apt-get update
-apt-get install -y nginx
+# find out whats keeping your Ubuntu container’s Nginx installation from listening on por 80
 service nginx start
